@@ -40,3 +40,8 @@ def delete_task(request, pk):
     task = get_object_or_404(Task, pk=pk)
     task.delete()
     return redirect('home')
+
+def delete_done(request, pk):
+    task = get_object_or_404(Task, pk = pk)
+    task.delete()
+    return redirect('home')

@@ -49,6 +49,9 @@
                         <span style="position: relative; float: right;">
                             <a href="{% url 'mark_as_undone' task.pk %}" class="btn btn-danger"><i class="fa fa-times"></i> Mark as Undone</a>
                         </span>
+                        <span style="position: relative; float: right;">
+                            <a href="{% url 'delete_done' task.pk %}" class="btn btn-danger"><i class="fa fa-times"></i>Delete</a>
+                        </span>
                     </div>
                 </div>
                 {% endfor %}
